@@ -1,0 +1,248 @@
+
+/********** 
+ 1. Default  Styles 
+**********/
+@use "sass:math";
+
+/*Font */
+body {
+  font-family: $font-primary;
+  font-size: $base-font-size;
+  font-weight: $regular-font-weight;
+  line-height: 1.4;
+  color: $color-text;
+  background-color: $color-white;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: $font-secondary;
+  font-weight: $bold-font-weight;
+  line-height: 1.4;
+  color: $color-header;
+}
+
+h1, .h1 {
+  font-size: calc( $base-font-size * 1.475 + 2.7vw);
+  font-weight: $extbold-font-weight;
+  @include media-breakpoint-up-xl{
+    font-size: $base-font-size * 3.5;
+  }
+}
+
+
+h2, .h2 {
+  font-size: calc( $base-font-size * 1.45 + 2.1vw);
+  @include media-breakpoint-up-xl{
+    font-size: $base-font-size * 3;
+  }
+}
+
+h3, .h3 {
+  font-size: calc($base-font-size * 1.325 + 0.9vw);
+  @include media-breakpoint-up-xl{
+    font-size: $base-font-size * 2;
+  }
+}
+
+h4, .h4 {
+  font-size: $base-font-size * 1.25;
+}
+
+h5, .h5 {
+  font-size: $base-font-size * 1;
+}
+
+h6, .h6 {
+  font-size: $base-font-size * 1;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: $base-margin;
+  color: $color-text;
+  font-size: $base-font-size ;
+  font-family: $font-primary;
+  line-height: 1.6;
+}
+a {
+  color: $color-header;
+  text-decoration: none;
+  display: inline-block;
+  transition: $base-transition;
+    &:hover {
+    color: $color-primary;
+  }
+}
+/********** 
+  11. Breadcrumb
+**********/
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+@media (max-width: 991.98px) {
+  .breadcrumb {
+    justify-content: center;
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 0.5rem;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  padding-right: 0.5rem;
+  color: #6c757d;
+  content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
+}
+.breadcrumb-item.active {
+  color: #6c757d;
+}
+/********** 
+  10. Badges
+**********/
+.badge {
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1.1;
+  font-family: "Roboto", sans-serif;
+  text-align: center; 
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.35rem;
+}
+.badge:empty {
+  display: none;
+}
+.badge-default {
+  background-color: transparent !important;
+  font-size: 14px;
+  line-height: 140%;
+  color: #05aa77;
+  border: 1px solid #05aa77;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+}
+.badge-lg {
+  padding: 0.5rem 1.375rem;
+}
+
+.btn .badge {
+  position: relative;
+  top: -1px;
+}
+
+/* Card */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: $color-white;
+  background-clip: border-box;
+  border: none;
+  border-radius: 0.35rem;
+}
+/* caret */
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0;
+  vertical-align: 0;
+  content: "";
+  border-top: none;
+  border-right: none;
+  border-bottom: 0;
+  border-left: none;
+}
+/* ACCORDIONS */
+
+.accordion-button {
+  padding: $base-padding * 1.25 $base-padding * 2.5;
+  font-family: $font-primary;
+  font-size: $base-font-size * 1.5;
+  font-weight: $medium-font-weight;
+  color: $color-header;
+  text-align: left; // Reset button style
+  background-color: $color-white;
+  border-radius: 0;
+  border-radius: 0.875rem;
+  &:not(.collapsed) {
+    color: $color-primary;
+    background-color: $color-white;
+    border-bottom: 1px solid $color-text-light;
+    border-radius: 0.875rem 0.875rem 0 0;
+    box-shadow: unset;
+  }
+  &:focus {
+    z-index: 3;
+    border-color:$color-text-light;
+    outline: 0;
+    box-shadow: none;
+  }
+  @include media-breakpoint-down-sm{
+    padding: $base-padding * 1.25 ($base-padding * 2.5 - 1.5);
+  }
+}
+.accordion-body {
+  line-height: 26px;
+  padding: 1.25rem 2.5rem;
+  @include media-breakpoint-up-lg{
+    padding-right: $base-padding * 8.5;
+  }
+  p{
+    line-height: 26px;
+  }
+}
+.accordion-item {
+  margin-bottom: 1.5rem;
+  background-color: $color-white;
+  border: 1px solid $color-text-light;
+  border-radius: 0.875rem;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: calc(0.875rem - 1px);
+  border-bottom-left-radius: calc(0.875rem - 1px);
+}
+.accordion-item:first-of-type {
+  border-top-left-radius: 0.875rem;
+  border-top-right-radius: 0.875rem;
+}
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: calc(0.875rem - 1px);
+  border-top-right-radius: calc(0.875rem - 1px);
+}
+.accordion-item:last-of-type {
+  margin-bottom: 0;
+  border-bottom-right-radius: 0.875rem;
+  border-bottom-left-radius: 0.875rem;
+}
+.accordion-item-no-border {
+  margin-bottom: $base-padding * 1.5;
+  background-color: $color-white;
+  border: 1px solid $color-gray-dark;
+  border-radius: 0;
+  .accordion-button {
+    border-radius: 0;
+    border-bottom-width: 0;
+  }
+  &:first-of-type{
+    border-radius: 0;
+  }
+  &:last-of-type{
+    border-radius: 0;
+  }
+  .accordion-body {
+    background: $color-success;
+  }
+}

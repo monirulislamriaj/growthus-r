@@ -1,0 +1,89 @@
+/********** 
+8. Hero home Styles 
+**********/
+// Hero Section CSS
+.hero {
+  position: relative;
+  &-shape-wrapper {
+    overflow: hidden;
+    bottom: 0%;
+  }
+  &-shape {
+    top: 0%;
+    width: 620px;
+    height: 620px;
+    right: 0%;
+    z-index: 0;
+    text-align: left;
+    overflow: hidden;
+    @include media-breakpoint-down-xxl {
+      width: 545px;
+      height: 545px;
+    }
+    @include media-breakpoint-down-xl {
+      width: 450px;
+      height: 450px;
+    }
+    @include media-breakpoint-down-lg {
+      width: 552px;
+      height: 552px;
+      right: 8%;
+    }
+    @include media-breakpoint-down-md {
+      width: 500px;
+      height: 500px;
+      right: 0%;
+    }
+    @include media-breakpoint-down-sm {
+      width: 90vw;
+      height: 90vw;
+      right: 0%;
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      width: 920px;
+      left: 50%;
+      opacity: 0.5;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &-content {
+    h1 {
+      margin-bottom: $base-margin * 1.625;
+      line-height:  1.25;
+      font-weight: $extbold-font-weight;
+      @include media-breakpoint-down-xl {
+        font-size:  $base-font-size * 3;
+      }
+      @include media-breakpoint-down-sm {
+        font-size: $base-font-size *2.5;
+      }
+    }
+    p {
+      font-weight: $medium-font-weight;
+      font-size: $base-font-size * 1.25;
+      margin-bottom: $base-margin * 2.5;
+      line-height: 1.7;
+    }
+  }
+  &-banner {
+    position: relative;
+
+    &-image {
+      position: relative;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .btn{
+    font-family: $font-secondary;
+    font-size: $base-font-size * 1.125;
+    font-weight: $bold-font-weight;
+    @include media-breakpoint-down-lg{
+      margin-bottom: $base-margin * 3.125 !important;
+    }
+  }
+}

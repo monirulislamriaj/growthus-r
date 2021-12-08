@@ -1,0 +1,23 @@
+/********** 
+  15. Team Section Styles
+**********/
+.team{
+  .btn{
+    font-family: $font-secondary;
+    font-size: $base-font-size * 1.125;
+  }
+  &-member{
+    position:relative;
+    h4{
+      margin-top: $base-margin * 1.25;
+      margin-bottom:0;
+    }
+    img{
+      width: 100%;
+    }
+    p{
+      font-weight: $medium-font-weight;
+      font-size: $base-font-size * 1.125;
+    }
+  }
+}

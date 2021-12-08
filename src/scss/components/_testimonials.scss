@@ -1,0 +1,199 @@
+/********** 
+  13. Testimonial Section Styles
+**********/
+@use "sass:math";
+.testimonials {
+  h2{
+    margin-left: 1.125rem;
+  }
+  &-slider, &-sliderTwo {
+    .card {
+      position: relative;
+      box-shadow: none;
+      text-align: left;
+      padding: $base-padding  $base-padding;
+      margin: $base-margin * 9.375 $base-margin * 1.5;
+      @include media-breakpoint-down-md {
+        text-align: center;
+        margin: $base-margin * 4 $base-margin * 1.5;
+      }
+      @include media-breakpoint-down-sm {
+        text-align: center;
+      }
+      &.slick-current {
+        box-shadow: $base-box-shadow;
+      }
+      .profile {
+        display: flex;
+        background: $color-white;
+        position: absolute;
+        border-radius: $lg-border-radius;
+        top: -13%;
+        left: 50%;
+        box-shadow: 0px 15px 20px rgba(10, 37, 51, 0.08);
+        transform: translate(-50%, 13%);
+        padding: 10px 12px;
+        @include media-breakpoint-down-xxl {
+          top: -11%;
+          transform: translate(-50%, 11%);
+        }
+        @include media-breakpoint-down-xl {
+          top: -11%;
+          transform: translate(-50%, 11%);
+        }
+        img {
+          padding-right: 10px;
+        }
+      }
+      &-body {
+        padding: $base-padding * 1.5;
+        .icon {
+          display: flex;
+          margin-top: math.div($base-margin, 2);
+          margin-bottom: $base-margin * 1.5;
+          @include media-breakpoint-down-md{
+            justify-content: center;
+          }
+          // transform: translateX(0%);
+          // @include media-breakpoint-down(lg) {
+          //   transform: translateX(25%);
+          // }
+          // @include media-breakpoint-down(md) {
+          //   transform: translateX(35%);
+          // }
+          img {
+            padding-right: 5px;
+          }
+        }
+        h5 {
+          font-weight: 500;
+          font-size: $base-font-size * 1.25;
+          line-height: 170%;
+          margin-bottom: $base-margin * 1.5;
+          font-family: "Roboto", sans-serif;
+        }
+        .content {
+          p {
+            font-size: $base-font-size * 0.875;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .slick-list {
+      padding-right: 4rem;
+      margin-right: -15px;
+    }
+    // start slick-dots //
+    .slick-dots {
+      position: absolute;
+      width: 100%;
+      bottom: 90px;
+      text-align: left;
+      margin-left: 1.125rem;
+      @include media-breakpoint-down-xl {
+        bottom: 80px;
+      }
+      @include media-breakpoint-down-lg {
+        bottom: 70px;
+        width: 100%;
+      }
+      @include media-breakpoint-down-md {
+        bottom: 20px;
+        width: 100%;
+      }
+      @include media-breakpoint-down-sm {
+        bottom: 20px;
+        width: 100%;
+      }
+    }
+
+    .slick-dots li {
+      display: inline-block;
+      margin: 0 8px;
+      width: unset;
+      height: unset;
+    }
+
+    .slick-dots li button {
+      background: #c1c1c1;
+      text-indent: -999999999px;
+      width: 22px;
+      height: 3px;
+      outline: 0;
+      border-radius: 3px;
+      transition: 0.5s ease;
+      padding: 0;
+    }
+
+    .slick-dots li.slick-active button {
+      background: $color-primary;
+      width: 40px;
+      opacity: 1;
+    }
+    // start slick-arrow //
+    .slick-prev {
+      left: 75%;
+      @include media-breakpoint-down-xl {
+        left: 89%;
+      }
+      @include media-breakpoint-down-lg {
+        left: 85%;
+      }
+      @include media-breakpoint-down-sm {
+        left: 75%;
+      }
+    }
+    .slick-next {
+      right: 18%;
+      @include media-breakpoint-down-xl {
+        right: 0%;
+      }
+    }
+    .slick-prev,
+    .slick-next {
+      width: 36px;
+      height: 36px;
+      padding: 0;
+      top: -45px;
+      @include media-breakpoint-down-md {
+        top: -35px;
+      }
+      // @include media-breakpoint-down(sm) {
+      //   top: -28px;
+      // }
+      &:hover {
+        &:before {
+          color: $color-primary;
+        }
+      }
+    }
+    .slick-next:before,
+    .slick-prev:before {
+      font-family: "fontawesome";
+      content: "\f105 ";
+      transition: $base-transition;
+      color: $color-text;
+      font-size: $base-font-size* 2.5;
+    }
+    .slick-prev:before {
+      content: "\f104 ";
+    }
+  }
+
+  &-sliderTwo{
+    .card{
+      .profile{
+        img{
+          padding-right: 0;
+        }
+      }
+    }
+    .content-author{
+      img{
+        width: 60px;
+        margin-right: math.div($base-margin , 1.5);
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+/********** 
+  9. Client Section Styles
+**********/
+.client{
+  &-item-wrapper{
+    @include media-breakpoint-down-lg{
+      flex-wrap: wrap;
+    }
+  }
+  &-item{
+    @include media-breakpoint-down-lg{
+      margin-bottom: $base-margin * 3.5;
+      flex: 1 1 50%;
+    }
+  }
+}

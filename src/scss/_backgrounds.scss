@@ -1,0 +1,1548 @@
+
+/********** 
+  5. Backgrounds Styles
+**********/
+/**********
+Section Background Styles
+***********/
+.text-primary {
+  color: #05aa77 !important;
+}
+.text-secondary-light {
+  color: #cbd6da !important;
+}
+.bg-gray-dark {
+  background-color: $color-gray-dark !important;
+}
+.bg-turquoise {
+  background-color: #44c1d1 !important;
+}
+.bg-secondary-dark {
+  background-color: #0a2533 !important;
+}
+.bg-gray-light {
+  background-color: #fafafa !important;
+}
+.bg-light-dark {
+  background-color: #d6cdff !important;
+}
+.bg-orange-light {
+  background-color: #ffd5c2 !important;
+}
+.bg-primary-light {
+  background-color: #49daad !important;
+}
+.section-bg-primary {
+  background: $color-primary;
+  color: $color-white;
+}
+.section-bg-primary h1, .section-bg-primary .h1,
+.section-bg-primary h2,
+.section-bg-primary .h2,
+.section-bg-primary h3,
+.section-bg-primary .h3,
+.section-bg-primary h4,
+.section-bg-primary .h4,
+.section-bg-primary h5,
+.section-bg-primary .h5,
+.section-bg-primary h6,
+.section-bg-primary .h6 {
+  color: $color-white;
+}
+.section-bg-primary p {
+  color: $color-white;
+}
+.section-bg-primary span {
+  color: $color-white;
+}
+.section-bg-primary .btn-white {
+  color: $color-primary;
+}
+.section-bg-primary .btn-white:hover::after {
+  background-color: $color-gray-dark;
+}
+.section-bg-primary .btn-white:active, .section-bg-primary .btn-white:focus {
+  color: $color-primary !important;
+}
+.section-bg-primary svg {
+  z-index: -1;
+}
+.section-bg-primary svg path {
+  opacity: 0.75;
+}
+.section-bg-primary input.form-control {
+  flex: 1;
+}
+.section-bg-primary .btn-light-green {
+  color: $color-white;
+  background: rgba($color: $color-primary, $alpha: 0.75);
+  border-color: $color-primary;
+}
+.section-bg-primary .form-control {
+  background-color: $color-primary;
+  border-color: $color-white !important;
+  color: $color-white;
+}
+.section-bg-primary ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-primary :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-primary ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-primary :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $color-white;
+}
+.section-bg-primary ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $color-white;
+}
+.section-bg-primary .btn-primary {
+  background: $color-white;
+  color: $color-primary;
+  border-color: $color-white !important;
+}
+.section-bg-primary .btn-primary:active, .section-bg-primary .btn-primary:focus {
+  color: $color-primary !important;
+}
+
+.section-bg-secondary {
+  background: $color-secondary;
+  color: $color-white;
+}
+.section-bg-secondary h1, .section-bg-secondary .h1,
+.section-bg-secondary h2,
+.section-bg-secondary .h2,
+.section-bg-secondary h3,
+.section-bg-secondary .h3,
+.section-bg-secondary h4,
+.section-bg-secondary .h4,
+.section-bg-secondary h5,
+.section-bg-secondary .h5,
+.section-bg-secondary h6,
+.section-bg-secondary .h6 {
+  color: $color-white;
+}
+.section-bg-secondary p {
+  color: $color-white;
+}
+.section-bg-secondary span {
+  color: $color-white;
+}
+.section-bg-secondary .btn-white {
+  color: $color-secondary;
+}
+.section-bg-secondary .btn-white:hover::after {
+  background-color: #f5f5f5;
+}
+.section-bg-secondary .btn-white:active, .section-bg-secondary .btn-white:focus {
+  color: $color-secondary !important;
+}
+.section-bg-secondary svg {
+  z-index: -1;
+}
+.section-bg-secondary svg path {
+  opacity: 0.75;
+}
+.section-bg-secondary input.form-control {
+  flex: 1;
+}
+.section-bg-secondary .btn-light-green {
+  color: $color-white;
+  background: rgba($color: $color-secondary, $alpha: 0.75);
+  border-color: $color-secondary;
+}
+.section-bg-secondary .form-control {
+  background-color: $color-secondary;
+  border-color: $color-white !important;
+  color: $color-white;
+}
+.section-bg-secondary ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-secondary :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-secondary ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-secondary :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $color-white;
+}
+.section-bg-secondary ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $color-white;
+}
+.section-bg-secondary .btn-primary {
+  background: $color-white;
+  color: $color-secondary;
+  border-color: $color-white !important;
+}
+.section-bg-secondary .btn-primary:active, .section-bg-secondary .btn-primary:focus {
+  color: $color-primary !important;
+}
+
+.section-bg-success {
+  background: $color-success;
+  color: $color-white;
+}
+.section-bg-success h1, .section-bg-success .h1,
+.section-bg-success h2,
+.section-bg-success .h2,
+.section-bg-success h3,
+.section-bg-success .h3,
+.section-bg-success h4,
+.section-bg-success .h4,
+.section-bg-success h5,
+.section-bg-success .h5,
+.section-bg-success h6,
+.section-bg-success .h6 {
+  color: $color-white;
+}
+.section-bg-success p {
+  color: $color-white;
+}
+.section-bg-success span {
+  color: $color-white;
+}
+.section-bg-success .btn-white {
+  color: $color-success;
+}
+.section-bg-success .btn-white:hover::after {
+  background-color: #f5f5f5;
+}
+.section-bg-success .btn-white:active, .section-bg-success .btn-white:focus {
+  color: $color-success !important;
+}
+.section-bg-success svg {
+  z-index: -1;
+}
+.section-bg-success svg path {
+  opacity: 0.75;
+}
+.section-bg-success input.form-control {
+  flex: 1;
+}
+.section-bg-success .btn-light-green {
+  color: $color-white;
+  background:  $color-success;
+  border-color: $color-success;
+}
+.section-bg-success .form-control {
+  background-color: $color-success;
+  border-color: $color-white !important;
+  color: $color-white;
+}
+.section-bg-success ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-success :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-success ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-success :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $color-white;
+}
+.section-bg-success ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $color-white;
+}
+.section-bg-success .btn-primary {
+  background: $color-white;
+  color: $color-success;
+  border-color: $color-white !important;
+}
+.section-bg-success .btn-primary:active, .section-bg-success .btn-primary:focus {
+  color: $color-primary !important;
+}
+.section-bg-warning {
+  background: $color-warning;
+  color: $color-white;
+}
+.section-bg-warning h1, .section-bg-warning .h1,
+.section-bg-warning h2,
+.section-bg-warning .h2,
+.section-bg-warning h3,
+.section-bg-warning .h3,
+.section-bg-warning h4,
+.section-bg-warning .h4,
+.section-bg-warning h5,
+.section-bg-warning .h5,
+.section-bg-warning h6,
+.section-bg-warning .h6 {
+  color: $color-white;
+}
+.section-bg-warning p {
+  color: $color-white;
+}
+.section-bg-warning span {
+  color: $color-white;
+}
+.section-bg-warning .btn-white {
+  color: $color-warning;
+}
+.section-bg-warning .btn-white:hover::after {
+  background-color: $color-gray-dark;
+}
+.section-bg-warning .btn-white:active, .section-bg-warning .btn-white:focus {
+  color: $color-warning !important;
+}
+.section-bg-warning svg {
+  z-index: -1;
+}
+.section-bg-warning svg path {
+  opacity: 0.75;
+}
+.section-bg-warning input.form-control {
+  flex: 1;
+}
+.section-bg-warning .btn-light-green {
+  color: $color-white;
+  background: rgba($color: $color-warning, $alpha: 0.75);
+  border-color: $color-warning;
+}
+.section-bg-warning .form-control {
+  background-color: $color-warning;
+  border-color: $color-white !important;
+  color: $color-white;
+}
+.section-bg-warning ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-warning :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-warning ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-warning :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $color-white;
+}
+.section-bg-warning ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $color-white;
+}
+.section-bg-warning .btn-primary {
+  background: $color-white;
+  color: $color-warning;
+  border-color: $color-white !important;
+}
+.section-bg-warning .btn-primary:active, .section-bg-warning .btn-primary:focus {
+  color: $color-primary !important;
+}
+
+.section-bg-danger {
+  background: $color-danger;
+  color: $color-white;
+}
+.section-bg-danger h1, .section-bg-danger .h1,
+.section-bg-danger h2,
+.section-bg-danger .h2,
+.section-bg-danger h3,
+.section-bg-danger .h3,
+.section-bg-danger h4,
+.section-bg-danger .h4,
+.section-bg-danger h5,
+.section-bg-danger .h5,
+.section-bg-danger h6,
+.section-bg-danger .h6 {
+  color: $color-white;
+}
+.section-bg-danger p {
+  color: $color-white;
+}
+.section-bg-danger span {
+  color: $color-white;
+}
+.section-bg-danger .btn-white {
+  color: $color-danger;
+}
+.section-bg-danger .btn-white:hover::after {
+  background-color: $color-gray-dark;
+}
+.section-bg-danger .btn-white:active, .section-bg-danger .btn-white:focus {
+  color: $color-danger !important;
+}
+.section-bg-danger svg {
+  z-index: -1;
+}
+.section-bg-danger svg path {
+  opacity: 0.75;
+}
+.section-bg-danger input.form-control {
+  flex: 1;
+}
+.section-bg-danger .btn-light-green {
+  color: $color-white;
+  background: rgba($color: $color-danger, $alpha: 0.75);
+  border-color: $color-danger;
+}
+.section-bg-danger .form-control {
+  background-color: $color-danger;
+  border-color: $color-white !important;
+  color: $color-white;
+}
+.section-bg-danger ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-danger :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-danger ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-danger :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $color-white;
+}
+.section-bg-danger ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $color-white;
+}
+.section-bg-danger .btn-primary {
+  background: $color-white;
+  color: $color-danger;
+  border-color: $color-white !important;
+}
+.section-bg-danger .btn-primary:active, .section-bg-danger .btn-primary:focus {
+  color: $color-primary !important;
+}
+
+.section-bg-dark {
+  background: $color-dark;
+  color: $color-white;
+}
+.section-bg-dark h1, .section-bg-dark .h1,
+.section-bg-dark h2,
+.section-bg-dark .h2,
+.section-bg-dark h3,
+.section-bg-dark .h3,
+.section-bg-dark h4,
+.section-bg-dark .h4,
+.section-bg-dark h5,
+.section-bg-dark .h5,
+.section-bg-dark h6,
+.section-bg-dark .h6 {
+  color: $color-white;
+}
+.section-bg-dark p {
+  color: $color-white;
+}
+.section-bg-dark span {
+  color: $color-white;
+}
+.section-bg-dark .btn-white {
+  color: $color-dark;
+}
+.section-bg-dark .btn-white:hover::after {
+  background-color: $color-gray-dark;
+}
+.section-bg-dark .btn-white:active, .section-bg-dark .btn-white:focus {
+  color: $color-dark !important;
+}
+.section-bg-dark svg {
+  z-index: -1;
+}
+.section-bg-dark svg path {
+  opacity: 0.75;
+}
+.section-bg-dark input.form-control {
+  flex: 1;
+}
+.section-bg-dark .btn-light-green {
+  color: $color-white;
+  background: rgba($color: $color-dark, $alpha: 0.75);
+  border-color: $color-dark;
+}
+.section-bg-dark .form-control {
+  background-color: $color-dark;
+  border-color: $color-white !important;
+  color: $color-white;
+}
+.section-bg-dark ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-dark :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-dark ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.section-bg-dark :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $color-white;
+}
+.section-bg-dark ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $color-white;
+}
+.section-bg-dark .btn-primary {
+  background: $color-white;
+  color: $color-dark;
+  border-color: $color-white !important;
+}
+.section-bg-dark .btn-primary:active, .section-bg-dark .btn-primary:focus {
+  color: $color-primary !important;
+}
+
+
+/**********
+Card Bg Styles
+***********/
+.card-bg-primary {
+  background: $color-primary;
+  color: $color-white;
+}
+.card-bg-primary h1, .card-bg-primary .h1,
+.card-bg-primary h2,
+.card-bg-primary .h2,
+.card-bg-primary h3,
+.card-bg-primary .h3,
+.card-bg-primary h4,
+.card-bg-primary .h4,
+.card-bg-primary h5,
+.card-bg-primary .h5,
+.card-bg-primary h6,
+.card-bg-primary .h6 {
+  color: $color-white;
+}
+.card-bg-primary p {
+  color: $color-white;
+}
+.card-bg-primary span {
+  color: $color-white;
+}
+.card-bg-primary .btn-white {
+  color: $color-primary;
+}
+.card-bg-primary .btn-white:hover::after {
+  background-color: $color-gray-dark;
+}
+.card-bg-primary .btn-white:active, .card-bg-primary .btn-white:focus {
+  color: $color-primary !important;
+}
+.card-bg-primary svg {
+  z-index: -1;
+}
+.card-bg-primary svg path {
+  opacity: 0.75;
+}
+.card-bg-primary input.form-control {
+  flex: 1;
+}
+.card-bg-primary .btn-light-green {
+  color: $color-white;
+  background: rgba($color: $color-primary, $alpha: 0.75);
+  border-color: $color-primary;;
+}
+.card-bg-primary .form-control {
+  background-color: $color-primary;
+  border-color: $color-white !important;
+  color: $color-white;
+}
+.card-bg-primary ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-primary :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-primary ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-primary :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $color-white;
+}
+.card-bg-primary ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $color-white;
+}
+.card-bg-primary .btn-primary {
+  background: $color-white;
+  color: $color-primary;
+  border-color: $color-white !important;
+}
+.card-bg-primary .btn-primary:active, .card-bg-primary .btn-primary:focus {
+  color: $color-primary !important;
+}
+
+.card-bg-secondary {
+  background: $color-secondary;
+  color: $color-white;
+}
+.card-bg-secondary h1, .card-bg-secondary .h1,
+.card-bg-secondary h2,
+.card-bg-secondary .h2,
+.card-bg-secondary h3,
+.card-bg-secondary .h3,
+.card-bg-secondary h4,
+.card-bg-secondary .h4,
+.card-bg-secondary h5,
+.card-bg-secondary .h5,
+.card-bg-secondary h6,
+.card-bg-secondary .h6 {
+  color: $color-white;
+}
+.card-bg-secondary p {
+  color: $color-white;
+}
+.card-bg-secondary span {
+  color: $color-white;
+}
+.card-bg-secondary .btn-white {
+  color: $color-secondary;
+}
+.card-bg-secondary .btn-white:hover::after {
+  background-color: #f5f5f5;
+}
+.card-bg-secondary .btn-white:active, .card-bg-secondary .btn-white:focus {
+  color: $color-secondary !important;
+}
+.card-bg-secondary svg {
+  z-index: -1;
+}
+.card-bg-secondary svg path {
+  opacity: 0.75;
+}
+.card-bg-secondary input.form-control {
+  flex: 1;
+}
+.card-bg-secondary .btn-light-green {
+  color: $color-white;
+  background: rgba($color: $color-secondary, $alpha: 0.75);
+  border-color: $color-secondary;
+}
+.card-bg-secondary .form-control {
+  background-color: $color-secondary;
+  border-color: $color-white !important;
+  color: $color-white;
+}
+.card-bg-secondary ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-secondary :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-secondary ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-secondary :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $color-white;
+}
+.card-bg-secondary ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $color-white;
+}
+.card-bg-secondary .btn-primary {
+  background: $color-white;
+  color: $color-secondary;
+  border-color: $color-white !important;
+}
+.card-bg-secondary .btn-primary:active, .card-bg-secondary .btn-primary:focus {
+  color: $color-primary !important;
+}
+
+.card-bg-success {
+  background: $color-success;
+  color: $color-white;
+}
+.card-bg-success h1, .card-bg-success .h1,
+.card-bg-success h2,
+.card-bg-success .h2,
+.card-bg-success h3,
+.card-bg-success .h3,
+.card-bg-success h4,
+.card-bg-success .h4,
+.card-bg-success h5,
+.card-bg-success .h5,
+.card-bg-success h6,
+.card-bg-success .h6 {
+  color: $color-white;
+}
+.card-bg-success p {
+  color: $color-white;
+}
+.card-bg-success span {
+  color: $color-white;
+}
+.card-bg-success .btn-white {
+  color: $color-success;
+}
+.card-bg-success .btn-white:hover::after {
+  background-color: $color-gray-dark;
+}
+.card-bg-success .btn-white:active, .card-bg-success .btn-white:focus {
+  color: $color-success !important;
+}
+.card-bg-success svg {
+  z-index: -1;
+}
+.card-bg-success svg path {
+  opacity: 0.75;
+}
+.card-bg-success input.form-control {
+  flex: 1;
+}
+.card-bg-success .btn-light-green {
+  color: $color-white;
+  background: rgba($color: $color-success, $alpha: 0.75);
+  border-color: $color-secondary;
+}
+.card-bg-success .form-control {
+  background-color: $color-success;
+  border-color: $color-white !important;
+  color: $color-white;
+}
+.card-bg-success ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-success :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-success ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-success :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $color-white;
+}
+.card-bg-success ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $color-white;
+}
+.card-bg-success .btn-primary {
+  background: $color-white;
+  color: $color-success;
+  border-color: $color-white !important;
+}
+.card-bg-success .btn-primary:active, .card-bg-success .btn-primary:focus {
+  color: $color-primary !important;
+}
+
+.card-bg-warning {
+  background: $color-warning;
+  color: $color-white;
+}
+.card-bg-warning h1, .card-bg-warning .h1,
+.card-bg-warning h2,
+.card-bg-warning .h2,
+.card-bg-warning h3,
+.card-bg-warning .h3,
+.card-bg-warning h4,
+.card-bg-warning .h4,
+.card-bg-warning h5,
+.card-bg-warning .h5,
+.card-bg-warning h6,
+.card-bg-warning .h6 {
+  color: $color-white;
+}
+.card-bg-warning p {
+  color: $color-white;
+}
+.card-bg-warning span {
+  color: $color-white;
+}
+.card-bg-warning .btn-white {
+  color: $color-warning;
+}
+.card-bg-warning .btn-white:hover::after {
+  background-color: $color-gray-dark;
+}
+.card-bg-warning .btn-white:active, .card-bg-warning .btn-white:focus {
+  color: $color-warning !important;
+}
+.card-bg-warning svg {
+  z-index: -1;
+}
+.card-bg-warning svg path {
+  opacity: 0.75;
+}
+.card-bg-warning input.form-control {
+  flex: 1;
+}
+.card-bg-warning .btn-light-green {
+  color: $color-white;
+  background: rgba($color: $color-warning, $alpha: 0.75);
+  border-color: $color-warning;
+}
+.card-bg-warning .form-control {
+  background-color: $color-warning;
+  border-color: $color-white !important;
+  color: $color-white;
+}
+.card-bg-warning ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-warning :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-warning ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-warning :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $color-white;
+}
+.card-bg-warning ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $color-white;
+}
+.card-bg-warning .btn-primary {
+  background: $color-white;
+  color: $color-warning;
+  border-color: $color-white !important;
+}
+.card-bg-warning .btn-primary:active, .card-bg-warning .btn-primary:focus {
+  color: $color-primary !important;
+}
+
+.card-bg-danger {
+  background: $color-danger;
+  color: $color-white;
+}
+.card-bg-danger h1, .card-bg-danger .h1,
+.card-bg-danger h2,
+.card-bg-danger .h2,
+.card-bg-danger h3,
+.card-bg-danger .h3,
+.card-bg-danger h4,
+.card-bg-danger .h4,
+.card-bg-danger h5,
+.card-bg-danger .h5,
+.card-bg-danger h6,
+.card-bg-danger .h6 {
+  color: $color-white;
+}
+.card-bg-danger p {
+  color: $color-white;
+}
+.card-bg-danger span {
+  color: $color-white;
+}
+.card-bg-danger .btn-white {
+  color: $color-danger;
+}
+.card-bg-danger .btn-white:hover::after {
+  background-color: #f5f5f5;
+}
+.card-bg-danger .btn-white:active, .card-bg-danger .btn-white:focus {
+  color: $color-danger !important;
+}
+.card-bg-danger svg {
+  z-index: -1;
+}
+.card-bg-danger svg path {
+  opacity: 0.75;
+}
+.card-bg-danger input.form-control {
+  flex: 1;
+}
+.card-bg-danger .btn-light-green {
+  color: $color-white;
+  background: rgba($color: $color-danger, $alpha: 0.75);
+  border-color: $color-danger;
+}
+.card-bg-danger .form-control {
+  background-color: $color-danger;
+  border-color: $color-white !important;
+  color: $color-white;
+}
+.card-bg-danger ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-danger :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-danger ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-danger :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $color-white;
+}
+.card-bg-danger ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $color-white;
+}
+.card-bg-danger .btn-primary {
+  background: $color-white;
+  color: $color-danger;
+  border-color: $color-white !important;
+}
+.card-bg-danger .btn-primary:active, .card-bg-danger .btn-primary:focus {
+  color: $color-primary !important;
+}
+
+.card-bg-dark {
+  background: $color-dark;
+  color: $color-white;
+}
+.card-bg-dark h1, .card-bg-dark .h1,
+.card-bg-dark h2,
+.card-bg-dark .h2,
+.card-bg-dark h3,
+.card-bg-dark .h3,
+.card-bg-dark h4,
+.card-bg-dark .h4,
+.card-bg-dark h5,
+.card-bg-dark .h5,
+.card-bg-dark h6,
+.card-bg-dark .h6 {
+  color: $color-white;
+}
+.card-bg-dark p {
+  color: $color-white;
+}
+.card-bg-dark span {
+  color: $color-white;
+}
+.card-bg-dark .btn-white {
+  color: $color-dark;
+}
+.card-bg-dark .btn-white:hover::after {
+  background-color: $color-gray-dark;
+}
+.card-bg-dark .btn-white:active, .card-bg-dark .btn-white:focus {
+  color: $color-dark  !important;
+}
+.card-bg-dark svg {
+  z-index: -1;
+}
+.card-bg-dark svg path {
+  opacity: 0.75;
+}
+.card-bg-dark input.form-control {
+  flex: 1;
+}
+.card-bg-dark .btn-light-green {
+  color: $color-white;
+  background: rgba($color: $color-dark, $alpha: 0.75);
+  border-color: $color-dark;
+  ;
+}
+.card-bg-dark .form-control {
+  background-color: $color-dark;
+  border-color: $color-white !important;
+  color: $color-white;
+}
+.card-bg-dark ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-dark :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-dark ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-white;
+  opacity: 1;
+  /* Firefox */
+}
+.card-bg-dark :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $color-white;
+}
+.card-bg-dark ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $color-white;
+}
+.card-bg-dark .btn-primary {
+  background: $color-white;
+  color: $color-dark;
+  border-color: $color-white !important;
+}
+.card-bg-dark .btn-primary:active, .card-bg-dark .btn-primary:focus {
+  color: $color-primary !important;
+}
+
+
+/**********
+Badge Background  Styles
+***********/
+.badge-bg, .badge-outline {
+  font-family: $font-primary;
+  font-weight: $bold-font-weight;
+  font-size: 14px;
+  line-height: 140%;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 5px 16px;
+}
+.badge-primary {
+  color: $color-primary;
+  background: mix($color-white, $color-primary, 75%);
+  border: 1px solid mix($color-black, $color-primary, 10%) ;
+}
+.badge-secondary {
+  color: $color-secondary;
+  background: mix($color-white, $color-secondary, 75%);
+  border: 1px solid mix($color-black, $color-secondary, 10%) ;
+}
+.badge-success {
+  color: $color-success;
+  background: mix($color-white, $color-success, 75%);
+  border: 1px solid mix($color-black, $color-success, 10%) ;
+}
+.badge-danger {
+  color: $color-danger;
+  background: mix($color-white, $color-danger, 75%);
+  border: 1px solid mix($color-black, $color-danger, 10%) ;
+}
+.badge-warning {
+  color: $color-warning;
+  background: mix($color-white, $color-warning, 75%);
+  border: 1px solid mix($color-black, $color-warning, 10%) ;
+}
+.badge-dark {
+  color: $color-dark;
+  background: mix($color-white, $color-dark, 75%);
+  border: 1px solid mix($color-black, $color-dark, 10%) ;
+}
+.badge-info {
+  color: #455157;
+  background: #CBD6DA;
+  border: 1px solid #455157;
+}
+/**********
+Badge Outline
+***********/
+.badge-outline-primary {
+  color: $color-primary;
+  border: 1px solid $color-primary;
+}
+.badge-outline-secondary {
+  color: $color-secondary;
+  border: 1px solid $color-secondary;
+}
+.badge-outline-info {
+  color: #455157;
+  border: 1px solid #455157;
+}
+.badge-outline-success {
+  color: $color-success;
+  border: 1px solid $color-success;
+}
+.badge-outline-danger {
+  color: $color-danger;
+  border: 1px solid $color-danger;
+}
+.badge-outline-warning {
+  color: $color-warning;
+  border: 1px solid $color-warning;
+}
+.badge-outline-dark {
+  color: $color-dark;
+  border: 1px solid $color-dark;
+}
+
+/* Mixin and style for SVG*/
+.svg-fill-primary {
+  fill: $color-primary;
+}
+
+.svg-fill-secondary {
+  fill: $color-secondary;
+}
+
+.svg-fill-success {
+  fill: $color-success;
+}
+
+.svg-fill-info {
+  fill: #cffff4;
+}
+
+.svg-fill-warning {
+  fill: $color-warning;
+}
+
+.svg-fill-danger {
+  fill: $color-danger;
+}
+
+.svg-fill-light {
+  fill: #49DAAD;
+}
+
+.svg-fill-dark {
+  fill: #212529;
+}
+
+.svg-fill-disabled {
+  fill: #CBD6DA;
+}
+
+.svg-fill-teal {
+  fill: #8c56ff;
+}
+
+.svg-fill-white {
+  fill: $color-white;
+}
+
+.svg-fill-black {
+  fill: $color-black;
+}
+
+.svg-fill-light-green {
+  fill: #d3f2ec;
+}
+
+.svg-fill-primary-light {
+  fill: #49daad;
+}
+
+.svg-fill-secondary-light {
+  fill: #cbd6da;
+}
+
+.svg-fill-danger-light {
+  fill: #ffecef;
+}
+
+.svg-fill-success-light {
+  fill: #d8f6ef;
+}
+
+.svg-fill-purple-light {
+  fill: #ede4ff;
+}
+
+.svg-fill-warning-light {
+  fill: #fff1e1;
+}
+
+.svg-fill-dark-light {
+  fill: #f9fafc;
+}
+
+.svg-fill-cyan {
+  fill: #cffff4;
+}
+
+.svg-fill-light-dark {
+  fill: #d6cdff;
+}
+
+.svg-fill-secondary-dark {
+  fill: #0a2533;
+}
+
+.svg-fill-gray-dark {
+  fill: #f5f5f5;
+}
+
+.svg-fill-gray-light {
+  fill: #fafafa;
+}
+
+.svg-fill-turquoise {
+  fill: #44c1d1;
+}
+
+.svg-fill-orange-light {
+  fill: #ffd5c2;
+}
+
+.svg-stroke-primary {
+  stroke: #05aa77;
+}
+
+.svg-stroke-secondary {
+  stroke: #9360ff;
+}
+
+.svg-stroke-success {
+  stroke: #05B637;
+}
+
+.svg-stroke-info {
+  stroke: #cffff4;
+}
+
+.svg-stroke-warning {
+  stroke: #F2AE00;
+}
+
+.svg-stroke-danger {
+  stroke: #FF1E2B;
+}
+
+.svg-stroke-light {
+  stroke: #49DAAD;
+}
+
+.svg-stroke-dark {
+  stroke: #212529;
+}
+
+.svg-stroke-disabled {
+  stroke: #CBD6DA;
+}
+
+.svg-stroke-teal {
+  stroke: #8c56ff;
+}
+
+.svg-stroke-white {
+  stroke: $color-white;
+}
+
+.svg-stroke-black {
+  stroke: #000;
+}
+
+.svg-stroke-light-green {
+  stroke: #d3f2ec;
+}
+
+.svg-stroke-primary-light {
+  stroke: #49daad;
+}
+
+.svg-stroke-secondary-light {
+  stroke: #cbd6da;
+}
+
+.svg-stroke-danger-light {
+  stroke: #ffecef;
+}
+
+.svg-stroke-success-light {
+  stroke: #d8f6ef;
+}
+
+.svg-stroke-purple-light {
+  stroke: #ede4ff;
+}
+
+.svg-stroke-warning-light {
+  stroke: #fff1e1;
+}
+
+.svg-stroke-dark-light {
+  stroke: #f9fafc;
+}
+
+.svg-stroke-cyan {
+  stroke: #cffff4;
+}
+
+.svg-stroke-light-dark {
+  stroke: #d6cdff;
+}
+
+.svg-stroke-secondary-dark {
+  stroke: #0a2533;
+}
+
+.svg-stroke-gray-dark {
+  stroke: #f5f5f5;
+}
+
+.svg-stroke-gray-light {
+  stroke: #fafafa;
+}
+
+.svg-stroke-turquoise {
+  stroke: #44c1d1;
+}
+
+.svg-stroke-orange-light {
+  stroke: #ffd5c2;
+}
+
+.svg-fill-green-light {
+  fill: #DEF5EE;
+}
+
+.svg-fill-green-dark {
+  fill: #6EEDB1;
+}
+
+.svg-fill-red-light {
+  fill: #FFE3DF;
+}
+
+.svg-fill-red-dark {
+  fill: #FF9C86;
+}
+
+.svg-fill-yellow-light {
+  fill: #FFF0D2;
+}
+
+.svg-fill-yellow-dark {
+  fill: #FEDC43;
+}
+
+.svg-fill-purple-dark {
+  fill: #F9EDFF;
+}
+
+.svg-fill-purple-dark {
+  fill: #DFA3FF;
+}
+
+.svg-stroke-default {
+  stroke: #0A2533;
+}
+
+.svg-fill-default {
+  fill: #0A2533;
+}
+
+/* Style for Table */
+
+.table-primary {
+  --bs-table-bg: #cdeee4;
+  --bs-table-striped-bg: #c3e2d9;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #b9d6cd;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #bedcd3;
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: #b9d6cd;
+}
+
+.table-secondary {
+  --bs-table-bg: #e9dfff;
+  --bs-table-striped-bg: #ddd4f2;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #d2c9e6;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #d8ceec;
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: #d2c9e6;
+}
+
+.table-success {
+  --bs-table-bg: #cdf0d7;
+  --bs-table-striped-bg: #c3e4cc;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #b9d8c2;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #bedec7;
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: #b9d8c2;
+}
+
+.table-info {
+  --bs-table-bg: #f5fffd;
+  --bs-table-striped-bg: #e9f2f0;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #dde6e4;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #e3ecea;
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: #dde6e4;
+}
+
+.table-warning {
+  --bs-table-bg: #fcefcc;
+  --bs-table-striped-bg: #efe3c2;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #e3d7b8;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #e9ddbd;
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: #e3d7b8;
+}
+
+.table-danger {
+  --bs-table-bg: #ffd2d5;
+  --bs-table-striped-bg: #f2c8ca;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #e6bdc0;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #ecc2c5;
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: #e6bdc0;
+}
+
+.table-light {
+  --bs-table-bg: #49DAAD;
+  --bs-table-striped-bg: #45cfa4;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #42c49c;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #44caa0;
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: #42c49c;
+}
+
+.table-dark {
+  --bs-table-bg: #212529;
+  --bs-table-striped-bg: #2c3034;
+  --bs-table-striped-color: $color-white;
+  --bs-table-active-bg: #373b3e;
+  --bs-table-active-color: $color-white;
+  --bs-table-hover-bg: #323539;
+  --bs-table-hover-color: $color-white;
+  color: $color-white;
+  border-color: #373b3e;
+}
+
+/* Alerts */
+/* Alerts */
+.alert-primary {
+  color: mix($color-black, $color-primary, 50%);
+  background-color: mix($color-white, $color-primary, 70%);
+  border-color: mix($color-white, $color-primary, 50%);
+}
+.alert-secondary {
+  color: mix($color-black, $color-secondary, 50%);
+  background-color: mix($color-white, $color-secondary, 70%);
+  border-color: mix($color-white, $color-secondary, 50%);
+}
+.alert-success {
+  color: mix($color-black, $color-success, 50%);
+  background-color: mix($color-white, $color-success, 70%);
+  border-color: mix($color-white, $color-success, 50%);
+}
+.alert-danger {
+  color: mix($color-black, $color-danger, 50%);
+  background-color: mix($color-white, $color-danger, 70%);
+  border-color: mix($color-white, $color-danger, 50%);
+}
+.alert-warning {
+  color: mix($color-black, $color-warning, 50%);
+  background-color: mix($color-white, $color-warning, 70%);
+  border-color: mix($color-white, $color-warning, 50%);
+}
+.alert-info {
+  color: mix($color-black, $color-info, 50%);
+  background-color: mix($color-white, $color-info, 70%);
+  border-color: mix($color-white, $color-info, 50%);
+}
+.alert-white {
+  color: mix($color-black, $color-white, 70%);
+  background-color: mix($color-white, $color-white, 70%);
+  border-color: mix($color-black, $color-white, 20%);
+}
+.alert-dark {
+  color: mix($color-black, $color-dark, 50%);
+  background-color: mix($color-white, $color-dark, 70%);
+  border-color: mix($color-white, $color-dark, 50%);
+}

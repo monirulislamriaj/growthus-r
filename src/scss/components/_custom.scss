@@ -1,0 +1,205 @@
+/********** 
+  6. Custom Styles 
+**********/
+// section-header style
+.section-header {
+  text-align: center;
+  margin-bottom: $base-margin * 4.375;
+  h2 {
+    margin-bottom: 12px;
+  }
+}
+.page-heading {
+  h6 {
+    color: $color-primary;
+    font-size: $base-font-size * 1.25;
+  }
+  .breadcrumb {
+    &-item {
+      font-weight: $medium-font-weight;
+      font-size: $base-font-size * 1.25;
+      line-height: 170%;
+      &.active {
+        color: $color-primary;
+      }
+    }
+  }
+}
+//Single Page Hero
+.page-hero {
+  padding-top: 18.75rem;
+  padding-bottom: 5rem;
+  @include media-breakpoint-down-lg {
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+    text-align: center;
+  }
+}
+.blog-single-page-hero {
+  padding-top: 43rem;
+  padding-bottom: 5rem;
+  @include media-breakpoint-down-xl {
+    padding-top: 32rem;
+  }
+  @include media-breakpoint-down-lg {
+    padding-top: 30rem;
+  }
+  @include media-breakpoint-down-md {
+    padding-top: 32rem;
+  }
+  @include media-breakpoint-down-sm {
+    padding-top: 14rem;
+  }
+}
+// Privacy-Policy page style
+.privacy,
+.terms-condition {
+  .card {
+    box-shadow: none;
+    border-bottom: $base-border-width solid $color-text-light;
+    border-radius: 0;
+    @include media-breakpoint-down-lg {
+      padding: $base-padding * 2 0 0 0;
+    }
+    @include media-breakpoint-down-md {
+      text-align: center;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+    &-body {
+      padding: 0 0 $base-padding * 4.5 0;
+
+      @include media-breakpoint-down-sm {
+        padding: 0 0 $base-padding * 2 0;
+      }
+      .card-title {
+        margin-bottom: $base-padding * 2;
+      }
+      .card-text {
+        font-size: $base-font-size * 1.125;
+        font-weight:  $medium-font-weight;
+        line-height: 1.7;
+      }
+      li {
+        font-size: $base-font-size * 1.125;
+        font-weight: $medium-font-weight;
+        font-family: $font-primary;
+        margin-bottom: $base-margin * 2;
+        line-height: 1.7;
+      }
+    }
+  }
+}
+
+// 404 page style
+.error{
+  &-content{
+    h1{
+      line-height: 1;
+      margin-bottom: 0;
+      font-size: 154px;
+    }
+    h2{
+      line-height: 1;
+    }
+  }
+}
+// cta style
+.cta {
+  overflow: hidden;
+  .shape {
+    .shape-left {
+      left: 0;
+    }
+    .shape-right {
+      right: 0;
+    }
+  }
+}
+// footer style
+.footer {
+  &-description {
+    margin-bottom:  $base-margin * 5;
+    p {
+      color: $color-text-light;
+    }
+    .footer-submit-form {
+      .from-group {
+        position: relative;
+        .input-group {
+          margin: 0 auto;
+          @include media-breakpoint-down-xl {
+            width: 100%;
+          }
+          @include media-breakpoint-down-lg {
+            width: 56%;
+          }
+          @include media-breakpoint-down-md {
+            width: 100%;
+          }
+          @include media-breakpoint-down-sm {
+            width: 100%;
+          }
+          .form-control {
+            position: relative;
+            padding: 1rem 3.5rem 1rem 1.25rem;
+            border-radius: 1rem;
+            border: none;
+            width: 70%;
+            z-index: 0;
+            height: 50px;
+            background: #1d3643;
+            color: $color-white;
+          }
+          ::placeholder {
+            color: $color-text-light !important;
+          }
+          .submit {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 6px;
+            button {
+              height: 38px;
+              background: $color-primary;
+              font-weight: 600;
+              color: $color-white;
+              position: relative;
+              align-items: center;
+              z-index: 9;
+              border-radius: 1rem;
+              width: 40px;
+              justify-content: center;
+              border: none;
+              svg{
+                position: absolute;
+                left: 50%;
+                top:50%;
+                transform: translate(-50%, -50%);                
+                margin-left:2px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &-widget {
+    a {
+      color: $color-text-light;
+      transition: $base-transition;
+      font-size: $base-font-size * .875;
+      font-weight: $medium-font-weight;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+    p {
+      color: $color-text-light;
+      font-size: $base-font-size * .875;
+      font-weight: $medium-font-weight;
+    }
+  }
+}

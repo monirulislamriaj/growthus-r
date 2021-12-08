@@ -1,0 +1,88 @@
+/********** 
+  18. Contact Form Styles
+**********/
+@use "sass:math";
+.contact-form {
+  form {
+    .form-label {
+      font-weight: $medium-font-weight;
+      margin-bottom: $base-margin;
+      margin-right: $base-margin;
+      color: $color-header;
+      font-size: 1.25rem;
+      font-family: $font-primary;
+    }
+    .form-control,
+    .form-select {
+      margin-bottom: $base-margin * 1.5;
+      border-radius: $base-border-radius;
+      padding: 1.45rem 1.25rem;
+      line-height: 1.4;
+      color: $color-text;
+      &:focus{
+        color: $color-header;
+        background-color: $color-white;
+        border-color: $color-primary;
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+  }
+  label.file-input{
+    font-family: $font-primary;
+    background-color: transparent;
+    color: $color-text;
+    padding: 1.5rem;
+    border-radius: 1.125rem;
+    cursor: pointer;
+    border: 2px solid #37BB92;
+    margin-bottom: 1.5rem;
+    svg{
+      margin-right: math.div($base-margin, 2);
+    }
+  }
+  
+  #file-chosen{
+    margin-left: 0.3rem;
+    font-family: $font-primary;
+  }
+}
+/* Style for contact Details section*/
+.contact-details{
+  .work-item-container{
+    padding-bottom: $base-padding *4;
+  }
+  &-item{
+    display: flex;
+    margin-bottom: $base-margin * 1.25;
+    &-icon{
+      flex-shrink: 0;
+      margin-right: $base-margin;
+    }
+    &-body{
+      flex-grow: 1;
+      p{
+        padding-bottom: 0 !important;
+        font-weight: $medium-font-weight;
+      }
+    }
+  }
+}
+
+::-webkit-input-placeholder { /* Edge */
+  font-size: $base-font-size;
+  line-height: 160%;
+  color: $color-text;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: $base-font-size;
+  line-height: 160%;
+  color: $color-text;
+}
+
+::placeholder {
+  font-size: $base-font-size;
+  line-height: 160%;
+  color: $color-text;
+}

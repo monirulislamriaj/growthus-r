@@ -1,0 +1,194 @@
+/********** 
+  11. Work Section Styles
+**********/
+.work {
+  overflow: hidden;
+  position: relative;
+  &-item-container{
+    padding-top: $base-padding * 7.5;
+    padding-bottom: $base-padding * 5;
+    @include media-breakpoint-down-lg{
+      padding-top: $base-padding * 3;
+      padding-bottom: $base-padding * 3;
+    }
+    @include media-breakpoint-down-sm {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  &-item {
+    position: relative;
+    @include media-breakpoint-down-lg {
+      margin-top: $base-padding * 3;
+      margin-bottom: $base-padding * 3;
+    }
+    &-shape-wrapper {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    &-shape {
+      position: absolute;
+      top: -7%;
+      width: 530px;
+      height: 575px;
+      right: 15.5%;
+      overflow: hidden;
+      @include media-breakpoint-down-xxl {
+        right: 8%;
+      }
+      @include media-breakpoint-down-xl {
+        right: 4%;
+        width: 470px;
+        height: 470px;
+      }
+      @include media-breakpoint-down-lg {
+        right: 14%;
+        width: 570px;
+        height: 590px;
+      }
+      @include media-breakpoint-down-md {
+        right: 15%;
+        width: 450px;
+        height: 470px;
+      }
+      @include media-breakpoint-down-sm {
+        right: 25%;
+        width: 350px;
+        height: 350px;
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        left: 50%;
+        opacity: 0.5;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .right-shape {
+      left: 15.5%;
+      @include media-breakpoint-down-xxl {
+        left: 8%;
+      }
+      @include media-breakpoint-down-xl {
+        left: 5%;
+      }
+      @include media-breakpoint-down-lg {
+        left: 14%;
+      }
+      @include media-breakpoint-down-md {
+        right:unset;
+        left: 14%;
+      }
+      @include media-breakpoint-down-sm {
+        left: 25%;
+      }
+    }
+    &-wraper {
+      position: relative;
+      bottom: 0%;
+      &-banner {
+        position: relative;
+        text-align: center;
+        img {
+          max-width: 100%;
+          @include media-breakpoint-down-md {
+            width: 470px;
+          }
+          @include media-breakpoint-down-sm {
+            width: 360px;
+          }
+        }
+      }
+      &-shape {
+        top: -12%;
+      }
+    }
+    .work-shap-one,
+    .work-shap-two,
+    .work-shap-three {
+      position: absolute;
+      top: 90%;
+      right: -30px;
+      img {
+        border-radius: 16px;
+      }
+      @include media-breakpoint-down-sm{
+        right: -8px;
+      }
+    }
+    .work-shap-two{
+      top: 83%;
+      img{
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+      }
+    }
+    .work-shap-two {
+      animation-name: up-down-animation;
+    }
+    .work-shap-three {
+      right: -10px;
+      top: 70%;
+      animation-name: scale-animation;
+    }
+  }
+  &-content {
+    text-align: left;
+    padding-left: $base-padding * 3;
+    padding-right: $base-padding * 9;
+    @include media-breakpoint-down-lg{
+      padding-left: $base-padding * 2;
+      padding-right: $base-padding * 2;
+    }
+    h2{
+      margin-bottom: $base-margin * 2;
+    }
+    p{
+      margin-bottom: $base-margin * 4;
+      line-height: 170%;
+    }
+    @include media-breakpoint-down-lg {
+      padding-top: 0;
+      text-align: center;
+    }
+    i {
+      font-family: "fontawesome" !important;
+    }
+  }
+  &-left-content{
+    padding-left: 0;
+    padding-right: $base-padding * 9;
+    @include media-breakpoint-down-lg{
+      padding-left: $base-padding * 2;
+      padding-right: $base-padding * 2;
+    }
+  }
+}
+@keyframes left-right-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+@keyframes up-down-animation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes scale-animation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

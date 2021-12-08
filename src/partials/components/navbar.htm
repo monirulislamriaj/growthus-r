@@ -1,0 +1,336 @@
+<!--
+  #############
+  Navbar Area
+  #############
+-->
+
+<header>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg position-fixed w-100 zindex-dropdown" id="navigationBar">
+    <div class="container-fluid">
+      <!--Navbar Brand-->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.svg" alt="" class="">
+      </a>
+      <!--Navbar Toggler-->
+      <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-default">
+          <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+            <path fill="white"
+              d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z">
+            </path>
+          </svg>
+        </span>
+        <span class="navbar-toggler-toggled">
+          <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+            <path fill="white"
+              d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z">
+            </path>
+          </svg>
+        </span>
+      </button>
+      <!--Navbar Menus Collapse-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item ">
+            <a href="about.html" class="nav-link @@if(nav == 'about'){active}">About</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link @@if(nav == 'service'){active}" href="service.html">
+              Services
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link @@if(nav == 'career'){active}" href="career.html">
+              Jobs
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  @@if(nav == 'project'){active}" href="project.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  @@if(nav == 'blog'){active}" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link  dropdown-toggle @@if(nav == 'elements'){active}" href="elements.html" role="button"
+              data-bs-toggle="dropdown">Elements</a>
+            <ul class="dropdown-menu megamenu">
+              <li class="dropdown-megamenu-conatiner ">
+                <h3 class="dropdown-header-title">Elements</h3>
+                <ul class="row g-0 g-md-3 list-unstyled dropdown-megamenu ">
+                  <li class="dropdown-megamenu-column">
+                    <ul class="list-unstyled">
+                      <li class="dropdown-megamenu-column-items">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="svg-fill-green-light" width="50" height="50" rx="14" fill="" />
+                          <path class="svg-stroke-default"
+                            d="M17.3333 30.4286L33.6667 30.4286M17.3333 30.4286C16.7145 30.4286 16.121 30.1878 15.6834 29.7591C15.2458 29.3304 15 28.7491 15 28.1429L15 21.2857C15 20.6795 15.2458 20.0981 15.6834 19.6695C16.121 19.2408 16.7145 19 17.3333 19L33.6667 19C34.2855 19 34.879 19.2408 35.3166 19.6695C35.7542 20.0981 36 20.6795 36 21.2857L36 28.1429C36 28.7491 35.7542 29.3304 35.3166 29.7591C34.879 30.1878 34.2855 30.4286 33.6667 30.4286M17.3333 30.4286L17.3333 32.7143C17.3333 33.3205 17.5792 33.9019 18.0167 34.3305C18.4543 34.7592 19.0478 35 19.6667 35L31.3333 35C31.9522 35 32.5457 34.7592 32.9832 34.3305C33.4208 33.9019 33.6667 33.3205 33.6667 32.7143L33.6667 30.4286"
+                            stroke="" stroke-width="2.39898" stroke-linecap="round" stroke-linejoin="round" />
+                          <g style="mix-blend-mode:multiply">
+                            <path class="svg-fill-green-dark"
+                              d="M7 19.5959C7 14.2962 11.2962 10 16.5959 10H29.0373V22.4414C29.0373 27.7411 24.7411 32.0373 19.4414 32.0373H7V19.5959Z"
+                              fill="" />
+                          </g>
+                        </svg>
+                        <a href="accordion.html" class="dropdown-item">Accordions</a>
+                      </li>
+                      <li class="dropdown-megamenu-column-items">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="svg-fill-yellow-light" width="50" height="50" rx="14" fill="" />
+                          <rect class="svg-fill-green-dark" x="17.5566" y="9" width="22.0373" height="19.5188"
+                            fill="" />
+                          <path class="svg-stroke-default" d="M24.166 20.7461V26.9441H30.364" stroke=""
+                            stroke-width="2.39898" stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default"
+                            d="M24.1655 36.6825C29.5446 36.6825 33.9052 32.3219 33.9052 26.9428C33.9052 21.5637 29.5446 17.2031 24.1655 17.2031C18.7864 17.2031 14.4258 21.5637 14.4258 26.9428C14.4258 32.3219 18.7864 36.6825 24.1655 36.6825Z"
+                            stroke="" stroke-width="2.39898" stroke-miterlimit="10" />
+                          <path class="svg-stroke-default" d="M31.6777 15.6758L35.4343 19.4323" stroke=""
+                            stroke-width="2.39898" stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default" d="M12.8984 19.4323L16.655 15.6758" stroke=""
+                            stroke-width="2.39898" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <a href="alerts.html" class="dropdown-item ">Alerts</a>
+                      </li>
+                      <li class="dropdown-megamenu-column-items">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="svg-fill-red-light" width="50" height="50" rx="14" fill="" />
+                          <g style="mix-blend-mode:multiply">
+                            <path class="svg-fill-red-dark"
+                              d="M9 26.7633C9 19.6971 14.7283 13.9688 21.7946 13.9688H26.2393C28.8892 13.9688 31.0373 16.1169 31.0373 18.7667V23.2115C31.0373 30.2777 25.309 36.0061 18.2428 36.0061H13.798C11.1481 36.0061 9 33.8579 9 31.2081V26.7633Z"
+                              fill="" />
+                          </g>
+                          <rect class="svg-stroke-default" x="15.9436" y="22.2503" width="21.601" height="9.00102"
+                            rx="4.50051" stroke="" stroke-width="2.39898" />
+                          <line class="svg-stroke-default" x1="23.1448" y1="26.445" x2="29.9766" y2="26.445" stroke=""
+                            stroke-width="2.39898" stroke-linecap="round" />
+                        </svg>
+
+                        <a href="badge.html" class="dropdown-item ">Badges</a>
+                      </li>
+                      <li class="dropdown-megamenu-column-items">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="svg-fill-green-light" width="50" height="50" rx="14" fill="" />
+                          <rect class="svg-fill-green-dark" x="16.3691" y="18.5195" width="25.8151" height="20.1484"
+                            rx="9.59593" fill="" />
+                          <rect class="svg-stroke-default" x="11.2444" y="17.8401" width="26.401" height="14.401"
+                            rx="7.20051" stroke="" stroke-width="2.39898" />
+                          <line class="svg-stroke-default" x1="21.6437" y1="24.6923" x2="26.8761" y2="24.6923" stroke=""
+                            stroke-width="3.9983" stroke-linecap="round" />
+                        </svg>
+
+                        <a href="button.html" class="dropdown-item ">Buttons</a>
+                      </li>
+                      <li class="dropdown-megamenu-column-items">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="svg-fill-yellow-light" width="50" height="50" rx="14" fill="" />
+                          <circle class="svg-fill-yellow-dark" cx="33.0558" cy="32.4288" r="11.0187" fill="" />
+                          <path class="svg-stroke-default"
+                            d="M29.2 20H14.8C14.3582 20 14 20.3638 14 20.8125V32.1875C14 32.6362 14.3582 33 14.8 33H29.2C29.6418 33 30 32.6362 30 32.1875V20.8125C30 20.3638 29.6418 20 29.2 20Z"
+                            stroke="" stroke-width="2.39898" stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default"
+                            d="M18 16H34.15C34.3754 16 34.5916 16.0922 34.751 16.2563C34.9104 16.4204 35 16.6429 35 16.875V30"
+                            stroke="" stroke-width="2.39898" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <a href="card.html" class="dropdown-item">Card</a>
+                      </li>
+                      <li class="dropdown-megamenu-column-items">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="svg-fill-purple-light" width="50" height="50" rx="14" fill="" />
+                          <rect class="svg-fill-purple-dark" x="9.29883" y="11.4414" width="20.1484" height="20.1484"
+                            rx="3.9983" fill="" />
+                          <path class="svg-stroke-default"
+                            d="M37.125 17H17.875C17.3918 17 17 17.4253 17 17.95V35.05C17 35.5747 17.3918 36 17.875 36H37.125C37.6082 36 38 35.5747 38 35.05V17.95C38 17.4253 37.6082 17 37.125 17Z"
+                            stroke="" stroke-width="2.16008" stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default" d="M21.9609 22.0664H32.9348" stroke="" stroke-width="2.16008"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default" d="M21.9609 26.0664H32.9348" stroke="" stroke-width="2.16008"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default" d="M21.9609 30.0664H32.9348" stroke="" stroke-width="2.16008"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <a href="form.html" class="dropdown-item">Forms</a>
+                      </li>
+                      <li class="dropdown-megamenu-column-items">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="svg-fill-green-light" width="50" height="50" rx="14" fill="" />
+                          <path class="svg-stroke-default"
+                            d="M24.5312 14.3477L35.7812 25.5977L24.5312 36.8477V31.2227H20.7812V19.9727H24.5312V14.3477Z"
+                            stroke="" stroke-width="1.99915" stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default" d="M13.2812 31.2266V19.9766" stroke="" stroke-width="1.99915"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default" d="M17.0352 31.2266V19.9766" stroke="" stroke-width="1.99915"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <g style="mix-blend-mode:multiply">
+                            <path class="svg-fill-green-dark"
+                              d="M27.2616 15.2617C34.0735 15.2617 39.5957 20.7839 39.5957 27.5958L39.5957 35.7032C39.5957 38.0376 37.7033 39.93 35.3689 39.93L27.2616 39.93C20.4496 39.93 14.9274 34.4078 14.9274 27.5958C14.9274 20.7839 20.4496 15.2617 27.2616 15.2617Z"
+                              fill="" />
+                          </g>
+                        </svg>
+
+                        <a href="pagination.html" class="dropdown-item">Pagination</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-megamenu-column">
+                    <ul class="list-unstyled">
+                      <li class="dropdown-megamenu-column-items">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="svg-fill-red-light" width="50" height="50" rx="15.9932" fill="" />
+                          <rect class="svg-fill-red-dark" x="19.7051" y="20.7031" width="20" height="20" rx="3.9983"
+                            fill="" />
+                          <path class="svg-stroke-default" d="M13.5864 18.3L13.5864 35.0508L30.3379 35.0508" stroke=""
+                            stroke-width="2.39898" stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default"
+                            d="M17.3111 31.3281L34.0625 31.3281L34.0625 14.5774L17.3111 14.5774L17.3111 31.3281Z"
+                            stroke="" stroke-width="2.39898" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <a href="modal.html" class="dropdown-item">Modals</a>
+                      </li>
+                      <li class="dropdown-megamenu-column-items">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="svg-fill-green-light" width="50" height="50" rx="15.9932" fill="" />
+                          <rect class="svg-fill-green-dark" x="21.6934" y="16.5469" width="20" height="20" rx="3.9983"
+                            fill="" />
+                          <path class="svg-stroke-default"
+                            d="M22.8308 27.607C24.3727 27.607 25.6226 26.3571 25.6226 24.8152C25.6226 23.2734 24.3727 22.0234 22.8308 22.0234C21.289 22.0234 20.0391 23.2734 20.0391 24.8152C20.0391 26.3571 21.289 27.607 22.8308 27.607Z"
+                            stroke="" stroke-width="2.39898" stroke-miterlimit="10" />
+                          <path class="svg-stroke-default"
+                            d="M13.5242 27.607C15.0661 27.607 16.316 26.3571 16.316 24.8152C16.316 23.2734 15.0661 22.0234 13.5242 22.0234C11.9823 22.0234 10.7324 23.2734 10.7324 24.8152C10.7324 26.3571 11.9823 27.607 13.5242 27.607Z"
+                            stroke="" stroke-width="2.39898" stroke-miterlimit="10" />
+                          <path class="svg-stroke-default"
+                            d="M32.1375 27.607C33.6793 27.607 34.9293 26.3571 34.9293 24.8152C34.9293 23.2734 33.6793 22.0234 32.1375 22.0234C30.5956 22.0234 29.3457 23.2734 29.3457 24.8152C29.3457 26.3571 30.5956 27.607 32.1375 27.607Z"
+                            stroke="" stroke-width="2.39898" stroke-miterlimit="10" />
+                        </svg>
+
+                        <a href="navbar-style.html" class="dropdown-item">Navbars</a>
+                      </li>
+                      <li class="dropdown-megamenu-column-items">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="svg-fill-yellow-light" width="50" height="50" rx="15.9932" fill="" />
+                          <rect class="svg-fill-yellow-dark" x="14.8145" y="19.3008" width="25.625" height="20"
+                            rx="9.59593" fill="" />
+                          <rect class="svg-stroke-default" x="10.1304" y="16.8824" width="25.3976" height="15.2727"
+                            rx="6.99703" stroke="" stroke-width="1.99915" />
+                          <circle class="svg-fill-default" cx="15.8893" cy="24.526" r="2.09631" fill="" />
+                          <circle class="svg-fill-default" cx="22.8444" cy="24.526" r="2.09631" fill="" />
+                          <circle class="svg-fill-default" cx="29.7916" cy="24.526" r="2.09631" fill="" />
+                        </svg>
+
+                        <a href="tabs.html" class="dropdown-item">Tabs</a>
+                      </li>
+                      <li class="dropdown-megamenu-column-items">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="svg-fill-green-light" width="50" height="50" rx="15.9932" fill="" />
+                          <circle class="svg-fill-green-dark" cx="17.7402" cy="17.4414" r="10.9375" fill="" />
+                          <path class="svg-stroke-default"
+                            d="M33.6568 15.043H15.9755C15.4616 15.043 15.0449 15.4596 15.0449 15.9736V33.6549C15.0449 34.1688 15.4616 34.5855 15.9755 34.5855H33.6568C34.1708 34.5855 34.5874 34.1688 34.5874 33.6549V15.9736C34.5874 15.4596 34.1708 15.043 33.6568 15.043Z"
+                            stroke="" stroke-width="2.39898" stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default" d="M24.8164 15.043V34.5855" stroke="" stroke-width="2.39898"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default" d="M34.5874 24.8164H15.0449" stroke="" stroke-width="2.39898"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <a href="tables.html" class="dropdown-item">Tables</a>
+                      </li>
+                      <li class="dropdown-megamenu-column-items">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="svg-fill-purple-light" width="50" height="50" rx="15.9932" fill="" />
+                          <g style="mix-blend-mode:multiply">
+                            <path class="svg-fill-purple-dark"
+                              d="M28.877 17.3203C35.2627 17.3203 40.4395 22.497 40.4395 28.8828L40.4395 36.2185C40.4395 38.5529 38.5471 40.4453 36.2127 40.4453L28.877 40.4453C22.4912 40.4453 17.3145 35.2686 17.3145 28.8828C17.3145 22.497 22.4912 17.3203 28.877 17.3203Z"
+                              fill="" />
+                          </g>
+                          <path class="svg-stroke-default"
+                            d="M18.1778 27.547C21.5185 27.547 24.2266 24.8388 24.2266 21.4981C24.2266 18.1574 21.5185 15.4492 18.1778 15.4492C14.8371 15.4492 12.1289 18.1574 12.1289 21.4981C12.1289 24.8388 14.8371 27.547 18.1778 27.547Z"
+                            stroke="" stroke-width="2.39898" stroke-miterlimit="10" />
+                          <path class="svg-stroke-default"
+                            d="M26.0176 15.672C26.8496 15.4376 27.7221 15.3842 28.5765 15.5154C29.4308 15.6466 30.2471 15.9594 30.9704 16.4326C31.6937 16.9059 32.3072 17.5287 32.7695 18.259C33.2319 18.9893 33.5324 19.8102 33.6507 20.6664C33.7691 21.5227 33.7026 22.3943 33.4557 23.2227C33.2089 24.051 32.7874 24.8169 32.2196 25.4686C31.6518 26.1204 30.951 26.6429 30.1643 27.0009C29.3775 27.359 28.5232 27.5443 27.6589 27.5444"
+                            stroke="" stroke-width="2.39898" stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default"
+                            d="M9.80273 31.897C10.7474 30.5532 12.0016 29.4565 13.4593 28.6994C14.9171 27.9422 16.5356 27.5469 18.1782 27.5469C19.8208 27.5468 21.4393 27.942 22.8971 28.699C24.3549 29.456 25.6092 30.5527 26.554 31.8964"
+                            stroke="#0A2533" stroke-width="2.39898" stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default"
+                            d="M27.6621 27.5469C29.3049 27.5457 30.9238 27.9404 32.3817 28.6975C33.8396 29.4546 35.0936 30.5519 36.0375 31.8964"
+                            stroke="" stroke-width="2.39898" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <a href="teams.html" class="dropdown-item">Teams</a>
+                      </li>
+                      <li class="dropdown-megamenu-column-items">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="svg-fill-green-light" width="50" height="50" rx="15.9932" fill="" />
+                          <g style="mix-blend-mode:multiply">
+                            <path class="svg-fill-green-dark"
+                              d="M6.17773 20.0719C6.17773 13.0057 11.9061 7.27734 18.9723 7.27734H23.2548C25.9046 7.27734 28.0527 9.42546 28.0527 12.0753V16.3578C28.0527 23.424 22.3244 29.1523 15.2582 29.1523H10.9757C8.32586 29.1523 6.17773 27.0042 6.17773 24.3544V20.0719Z"
+                              fill="" />
+                          </g>
+                          <path class="svg-stroke-default"
+                            d="M35.0521 15.5117H14.579C14.0651 15.5117 13.6484 15.9284 13.6484 16.4423V33.193C13.6484 33.707 14.0651 34.1236 14.579 34.1236H35.0521C35.5661 34.1236 35.9827 33.707 35.9827 33.193V16.4423C35.9827 15.9284 35.5661 15.5117 35.0521 15.5117Z"
+                            stroke="" stroke-width="2.39898" stroke-linecap="round" stroke-linejoin="round" />
+                          <circle class="svg-stroke-default" cx="20.0485" cy="22.4391" r="1.78674" stroke=""
+                            stroke-width="2.39898" stroke-linecap="round" stroke-linejoin="round" />
+                          <line class="svg-stroke-default" x1="26.6077" y1="21.8357" x2="30.1645" y2="21.8357" stroke=""
+                            stroke-width="2.39898" stroke-linecap="round" />
+                          <line class="svg-stroke-default" x1="19.4612" y1="28.9841" x2="30.165" y2="28.9841" stroke=""
+                            stroke-width="2.39898" stroke-linecap="round" />
+                        </svg>
+
+                        <a href="testimonials.html" class="dropdown-item">Testimonials</a>
+                      </li>
+                      <li class="dropdown-megamenu-column-items">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect class="svg-fill-yellow-light" width="50" height="50" rx="15.9932" fill="" />
+                          <rect class="svg-fill-yellow-dark" x="17.207" y="8.90234" width="21.875" height="19.375"
+                            fill="" />
+                          <path class="svg-stroke-default" d="M21.0957 18.3035V15.5117" stroke="" stroke-width="2.39898"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default" d="M28.541 34.1199V31.3281" stroke="" stroke-width="2.39898"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default" d="M18.3035 21.0938H15.5117" stroke="" stroke-width="2.39898"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default" d="M34.1238 28.5391H31.332" stroke="" stroke-width="2.39898"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default"
+                            d="M18.1916 24.8672L16.8755 26.1833C16.0033 27.0559 15.5135 28.2393 15.5137 29.4731C15.5139 30.7069 16.0041 31.8901 16.8765 32.7626C17.7489 33.635 18.9321 34.1252 20.166 34.1254C21.3998 34.1256 22.5831 33.6357 23.4558 32.7635L24.7719 31.4475"
+                            stroke="" stroke-width="2.39898" stroke-linecap="round" stroke-linejoin="round" />
+                          <path class="svg-stroke-default"
+                            d="M31.4455 24.7699L32.7616 23.4539C33.6338 22.5812 34.1236 21.3978 34.1234 20.164C34.1233 18.9302 33.6331 17.747 32.7606 16.8745C31.8882 16.0021 30.705 15.5119 29.4712 15.5117C28.2374 15.5115 27.054 16.0014 26.1813 16.8736L24.8652 18.1896"
+                            stroke="" stroke-width="2.39898" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <a href="404.html" class="dropdown-item ">404</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="dropdown-menu-footer list-unstyled">
+                  <li>
+                    <a href="#"><img src="images/logo.svg" alt="logo"></a>
+                    <p><span class="text-primary fw-medium">4.5 out of 5</span> based on 2000+ reviews</p>
+                  </li>
+                </ul>
+              </li>
+              <li><img src="images/arrowUp.svg" alt="arrow" class="nav-arrow"></li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="404.html">404</a>
+          </li> -->
+          <li class="nav-item ms-lg-6 ms-sm-0">
+            <a class=" btn btn-sm btn-gray-dark w-100" href="contact.html" tabindex="-1" aria-disabled="true">Let's
+              Talk</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!--
+  #############
+  End of  Navbar Area
+  #############
+-->

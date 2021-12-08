@@ -1,0 +1,32 @@
+/********** 
+  20. Pricing Section Styles
+**********/
+.price{
+  &-container{
+    background: $color-white;
+    border: 1px solid $color-text-light;
+    box-sizing: border-box;
+    border-radius: $base-border-radius;
+    margin-bottom: $base-margin * 2.5;
+    &.featured{
+      border: 1px solid $color-gray-dark;
+      box-shadow: 0px 45px 80px rgba(0, 0, 0, 0.04);
+      .price-header{
+        border-bottom: 1px solid $color-gray-dark;
+      }
+    }
+  }
+  &-header{
+    padding: $base-padding * 3.125 $base-padding * 2.5 0 $base-padding * 2.5 ;
+    border-bottom: 1px solid $color-text-light;
+    @include media-breakpoint-down-sm{
+      padding: $base-padding * 1.125 $base-padding * 1.125 0 $base-padding * 1.1255 ;
+    }
+  }
+  &-body{
+    padding: $base-padding * 3.125 $base-padding * 2.5 ;
+    @include media-breakpoint-down-sm{
+      padding: $base-padding * 1.125  ;
+    }
+  }
+}

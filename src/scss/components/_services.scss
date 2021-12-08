@@ -1,0 +1,145 @@
+/********** 
+  10. Services Page and Section Styles
+**********/
+.services {
+  &-item {
+    border: $base-border-width solid $color-gray-dark;
+    transition: $base-transition;
+    text-align: center;
+    padding: 3.75rem 2.25rem 4.5rem;
+    margin-bottom: $base-margin * 2;
+    &-icon{
+      margin-bottom: $base-margin *2.75;
+    }
+    h3 {
+      text-transform: capitalize;
+      transition: $base-transition;
+      margin-bottom: $base-margin *2.75;
+      @include media-breakpoint-up-lg{
+        padding: $base-padding *2 0
+      }
+      @include media-breakpoint-down-xl {
+        padding: $base-padding *2 0
+      }
+    }
+    &:hover {
+      background: $color-white;
+      border: $base-border-width solid $color-white;
+      box-shadow: 0px 45px 80px rgba(0, 0, 0, 0.04);
+      h3 {
+        color: $color-primary;
+      }
+    }
+    @include media-breakpoint-down-xl {
+      padding: $base-padding * 1.5 $base-padding $base-padding * 2;
+    }
+    @include media-breakpoint-down-md {
+     margin-bottom: $base-margin * 3;
+    }
+  }
+}
+
+
+//End services-Section
+
+/*Style for Service page hero*/
+.service-hero{
+  .work-content{
+    padding-right:4rem;
+  }
+  .work-item-container{
+    padding-bottom: 6rem;
+  }
+  &-content{
+    .breadcrumb{
+      margin-bottom: $base-margin * 0.625;
+      font-size: $base-font-size * 1.25;
+      font-weight: $medium-font-weight;
+      .active{
+        color: $color-primary;
+      }
+      @include media-breakpoint-down-lg{
+        justify-content: center;
+      }
+    }
+    h1{
+      line-height: 1.2;
+      margin-bottom: $base-margin * 2;
+    }
+    p{
+      margin-bottom: $base-margin * 2 !important;
+      padding-bottom: 0 !important;
+      font-size: $base-font-size * 1.25;
+      font-weight: $medium-font-weight;
+    }
+  }
+}
+
+.service-item{
+  .work-content{
+    @include media-breakpoint-down-lg{
+      text-align: left;
+    }
+    p{
+      margin-bottom: $base-margin * 2;
+    }
+  }
+  &-list{
+    margin-bottom:0;
+    li{
+      position: relative;
+      &:last-child{
+        span{
+          margin-bottom: $base-margin *2;
+        }
+      }
+      span{
+        display: inline-block;
+        font-size: $base-font-size * 1.125;
+        font-weight: $bold-font-weight;
+        margin-bottom: $base-margin *1.25;
+        margin-left: $base-margin *2;
+        position: relative;
+        &::before{
+          width: 10px;
+          height: 10px;
+          content: "";
+          border-radius: 100%;
+          background: $color-text;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: - $base-margin *2;
+        }
+      }
+    }
+  }
+}
+/* Service Single Page */
+.services-desc{
+  &-wrapper{
+    margin-bottom: $base-margin * 5;
+  }
+  &-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: $base-margin * 1.875;
+    &-icon{
+      flex-shrink: 0;
+      margin-right: $base-margin * 1.5;
+      width: 5rem;
+      height: 5rem;
+      background: $color-gray-dark;
+      border-radius: $base-border-radius;
+      position: relative;
+      svg{
+        position: absolute;
+        left:50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+
